@@ -8,7 +8,7 @@
 
 # Uncomment those lines to set JVM options. GRADLE_OPTS and JAVA_OPTS can be used together.
 # GRADLE_OPTS="$GRADLE_OPTS -Xmx512m"
-JAVA_OPTS="-Xmx512m"
+JAVA_OPTS="-Xmx512m -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5115"
 
 GRADLE_APP_NAME=Gradle
 
