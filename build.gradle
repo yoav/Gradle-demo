@@ -31,6 +31,8 @@ import java.text.SimpleDateFormat
 
 def globalVersion = new Version(currentVersion)
 
+evaluationDependsOnChildren()
+
 allprojects {
   apply plugin: 'artifactory'
   apply plugin: 'idea'
