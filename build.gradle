@@ -31,8 +31,6 @@ import java.text.SimpleDateFormat
 
 def globalVersion = new Version(currentVersion)
 
-evaluationDependsOnChildren()
-
 allprojects {
   apply plugin: 'artifactory'
   apply plugin: 'idea'
@@ -116,8 +114,9 @@ artifactory {
 
     }
   }
-
 }
+
+evaluationDependsOnChildren()
 
 task wrapper(type: Wrapper) {
   gradleVersion = '1.0-milestone-8'
