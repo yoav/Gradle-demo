@@ -20,7 +20,7 @@ buildscript {
       }
     }
     dependencies {
-      classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '2.0.12')
+      classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '2.0.14')
     }
   }
 
@@ -116,7 +116,7 @@ artifactory {
   }
 }
 
-evaluationDependsOnChildren()
+//evaluationDependsOnChildren()
 
 task wrapper(type: Wrapper) {
   gradleVersion = '1.0-milestone-8'
